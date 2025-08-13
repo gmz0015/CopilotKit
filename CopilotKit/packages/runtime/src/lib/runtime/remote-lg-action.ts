@@ -221,20 +221,21 @@ async function streamEvents(controller: ReadableStreamDefaultController, args: E
       : null,
   };
 
-  const assistants = await client.assistants.search();
-  const retrievedAssistant = assistants.find(
-    (a) => a.name === name || a.assistant_id === initialAssistantId,
-  );
+  // const assistants = await client.assistants.search();
+  const retrievedAssistant = await client.assistants.get(initialAssistantId);
+  // const retrievedAssistant = assistants.find(
+  //   (a) => a.name === name || a.assistant_id === initialAssistantId,
+  // );
   if (!retrievedAssistant) {
     telemetry.capture("oss.runtime.agent_execution_stream_errored", {
       ...streamInfo,
-      error: `Found no assistants for given information, while ${assistants.length} assistants exists`,
+      error: `Found no assistants for given information, while assistants exists`,
     });
     console.error(`
       No agent found for the agent name specified in CopilotKit provider
       Please check your available agents or provide an agent ID in the LangGraph Platform endpoint definition.\n
       
-      These are the available agents: [${assistants.map((a) => `${a.name} (ID: ${a.assistant_id})`).join(", ")}]
+      These are the available agents: [gmz edited]
       `);
     throw new Error("No agent id found");
   }
