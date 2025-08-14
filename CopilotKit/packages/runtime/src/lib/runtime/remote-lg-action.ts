@@ -672,7 +672,9 @@ class StreamingStateExtractor {
     if (event.data.chunk.tool_call_chunks.length > 0) {
       const chunk = event.data.chunk.tool_call_chunks[0];
 
-      if (chunk.name !== null && chunk.name !== undefined) {
+      // @bigppwong伟文修改 ↓↓↓
+      if (chunk.name !== null && chunk.name !== undefined && chunk.name !== this.currentToolCall) {
+        // @bigppwong伟文修改 ↑↑↑
         this.currentToolCall = chunk.name;
         this.toolCallBuffer[this.currentToolCall] = chunk.args;
       } else if (this.currentToolCall !== null && this.currentToolCall !== undefined) {
@@ -799,6 +801,16 @@ export function langchainMessagesToCopilotKit(messages: any[]): any[] {
         id: message.id,
       });
     } else if (message.type === "ai") {
+      // TODO 伟文添加，记得判断是否需要这样处理
+      // @bigppwong伟文修改 ↓↓↓
+      result.push({
+        role: "assistant",
+        content: content,
+        id: message.id,
+        parentMessageId: message.id,
+      });
+      // @bigppwong伟文修改 ↑↑↑
+
       if (message.tool_calls && message.tool_calls.length > 0) {
         for (const tool_call of message.tool_calls) {
           result.push({
@@ -808,13 +820,16 @@ export function langchainMessagesToCopilotKit(messages: any[]): any[] {
             parentMessageId: message.id,
           });
         }
-      } else {
-        result.push({
-          role: "assistant",
-          content: content,
-          id: message.id,
-          parentMessageId: message.id,
-        });
+        // TODO 伟文删除，记得判断是否需要这样处理
+        // @bigppwong伟文修改 ↓↓↓
+        // } else {
+        // result.push({
+        //   role: "assistant",
+        //   content: content,
+        //   id: message.id,
+        //   parentMessageId: message.id,
+        // });
+        // @bigppwong伟文修改 ↑↑↑
       }
     } else if (message.type === "tool") {
       const actionName = tool_call_names[message.tool_call_id] || message.name || "";

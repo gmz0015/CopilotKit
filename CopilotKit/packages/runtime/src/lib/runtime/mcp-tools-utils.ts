@@ -1,4 +1,7 @@
-import { Action, Parameter } from "@copilotkit/shared";
+import { Action, Parameter } from "@noahlocal/copilotkit-shared";
+// @bigppwong伟文修改 ↓↓↓
+import { ResultMessage } from "../../graphql/types/converted";
+// @bigppwong伟文修改 ↑↑↑
 
 /**
  * Represents a tool provided by an MCP server.
@@ -134,12 +137,12 @@ export function convertMCPToolsToActions(
           `Error executing MCP tool '${toolName}' from endpoint ${mcpEndpoint}:`,
           error,
         );
-        // Re-throw or format the error for the LLM
+        // @bigppwong伟文修改 ↓↓↓ # 解决了MCP result不返回的问题，解决了mcp params为空的问题
         throw new Error(
-          `Execution failed for MCP tool '${toolName}': ${
-            error instanceof Error ? error.message : String(error)
+          `Execution failed for MCP tool '${toolName}': ${error instanceof Error ? error.message : String(error)
           }`,
         );
+        // @bigppwong伟文修改 ↑↑↑
       }
     };
 
