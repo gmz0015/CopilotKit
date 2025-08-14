@@ -1,4 +1,4 @@
-import { randomId } from "@bigppwong/copilotkit-shared";
+import { randomId } from "@noahlocal/copilotkit-shared";
 import { useCallback, useReducer } from "react";
 
 export type TreeNodeId = string;

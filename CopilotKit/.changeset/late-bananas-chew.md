@@ -1,11 +1,11 @@
 ---
-"@bigppwong/copilotkit-runtime-client-gql": major
-"@bigppwong/copilotkit-react-textarea": major
-"@bigppwong/copilotkit-react-core": major
-"@bigppwong/copilotkit-react-ui": major
-"@bigppwong/copilotkit-runtime": major
-"@bigppwong/copilotkit-sdk-js": major
-"@bigppwong/copilotkit-shared": major
+"@noahlocal/copilotkit-runtime-client-gql": major
+"@noahlocal/copilotkit-react-textarea": major
+"@noahlocal/copilotkit-react-core": major
+"@noahlocal/copilotkit-react-ui": major
+"@noahlocal/copilotkit-runtime": major
+"@noahlocal/copilotkit-sdk-js": major
+"@noahlocal/copilotkit-shared": major
 ---
 
 fork copilotkit

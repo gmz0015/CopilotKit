@@ -1,5 +1,11 @@
 # @copilotkit/shared
 
+## 2.0.0-next.17
+
+### Major Changes
+
+- fix bug
+
 ## 2.0.0-next.16
 
 ### Major Changes

@@ -1,15 +1,15 @@
 {
-  "name": "@bigppwong/copilotkit-react-ui",
+  "name": "@noahlocal/copilotkit-react-ui",
   "private": false,
-  "homepage": "https://github.com/bigppwong/CopilotKit",
+  "homepage": "https://github.com/gmz0015/CopilotKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bigppwong/CopilotKit.git"
+    "url": "https://github.com/gmz0015/CopilotKit.git"
   },
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.0-next.16",
+  "version": "2.0.0-next.17",
   "sideEffects": [
     "**/*.css"
   ],
@@ -54,9 +54,9 @@
     "typescript": "^5.2.3"
   },
   "dependencies": {
-    "@bigppwong/copilotkit-react-core": "workspace:*",
-    "@bigppwong/copilotkit-runtime-client-gql": "workspace:*",
-    "@bigppwong/copilotkit-shared": "workspace:*",
+    "@noahlocal/copilotkit-react-core": "workspace:*",
+    "@noahlocal/copilotkit-runtime-client-gql": "workspace:*",
+    "@noahlocal/copilotkit-shared": "workspace:*",
     "@headlessui/react": "^2.1.3",
     "react-markdown": "^10.1.0",
     "react-syntax-highlighter": "^15.6.1",

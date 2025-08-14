@@ -15,16 +15,16 @@
  *
  * ### Install Dependencies
  *
- * This component is part of the [@bigppwong/copilotkit-react-ui](https://npmjs.com/package/@bigppwong/copilotkit-react-ui) package.
+ * This component is part of the [@noahlocal/copilotkit-react-ui](https://npmjs.com/package/@noahlocal/copilotkit-react-ui) package.
  *
- * ```shell npm2yarn \"@bigppwong/copilotkit-react-ui"\
- * npm install @bigppwong/copilotkit-react-core @bigppwong/copilotkit-react-ui
+ * ```shell npm2yarn \"@noahlocal/copilotkit-react-ui"\
+ * npm install @noahlocal/copilotkit-react-core @noahlocal/copilotkit-react-ui
  * ```
  *
  * ### Simple Usage
  *
  * ```tsx
- * import { useCopilotChatSuggestions } from "@bigppwong/copilotkit-react-ui";
+ * import { useCopilotChatSuggestions } from "@noahlocal/copilotkit-react-ui";
  *
  * export function MyComponent() {
  *   const [employees, setEmployees] = useState([]);
@@ -38,7 +38,7 @@
  * ### Dependency Management
  *
  * ```tsx
- * import { useCopilotChatSuggestions } from "@bigppwong/copilotkit-react-ui";
+ * import { useCopilotChatSuggestions } from "@noahlocal/copilotkit-react-ui";
  *
  * export function MyComponent() {
  *   useCopilotChatSuggestions(
@@ -60,8 +60,8 @@
  */
 
 import { useEffect } from "react";
-import { useCopilotContext } from "@bigppwong/copilotkit-react-core";
-import { randomId } from "@bigppwong/copilotkit-shared";
+import { useCopilotContext } from "@noahlocal/copilotkit-react-core";
+import { randomId } from "@noahlocal/copilotkit-shared";
 
 interface UseCopilotChatSuggestionsConfiguration {
   /**

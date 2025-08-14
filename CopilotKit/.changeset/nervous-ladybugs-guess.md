@@ -8,4 +8,4 @@
 "@noahlocal/copilotkit-shared": major
 ---
 
-add mcp result
+fix bug

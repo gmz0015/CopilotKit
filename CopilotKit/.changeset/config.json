@@ -6,7 +6,7 @@
   "baseBranch": "origin/main",
   "fixed": [
     [
-      "@bigppwong/copilotkit-*"
+      "@noahlocal/copilotkit-*"
     ]
   ],
   "ignore": [

@@ -1,15 +1,15 @@
 {
-  "name": "@bigppwong/copilotkit-sdk-js",
+  "name": "@noahlocal/copilotkit-sdk-js",
   "private": false,
-  "homepage": "https://github.com/bigppwong/CopilotKit",
+  "homepage": "https://github.com/gmz0015/CopilotKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bigppwong/CopilotKit.git"
+    "url": "https://github.com/gmz0015/CopilotKit.git"
   },
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.0-next.16",
+  "version": "2.0.0-next.17",
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -59,7 +59,7 @@
     "zod-to-json-schema": "^3.23.5"
   },
   "dependencies": {
-    "@bigppwong/copilotkit-shared": "workspace:*",
+    "@noahlocal/copilotkit-shared": "workspace:*",
     "@langchain/community": "^0.0.53",
     "@langchain/core": "^0.3.13",
     "@langchain/langgraph": "^0.2.44",

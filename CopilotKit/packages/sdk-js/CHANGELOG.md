@@ -1,5 +1,16 @@
 # @copilotkit/sdk-js
 
+## 2.0.0-next.17
+
+### Major Changes
+
+- fix bug
+
+### Patch Changes
+
+- Updated dependencies
+  - @noahlocal/copilotkit-shared@2.0.0-next.17
+
 ## 2.0.0-next.16
 
 ### Major Changes

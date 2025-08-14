@@ -1,15 +1,15 @@
 {
-  "name": "@bigppwong/copilotkit-runtime-client-gql",
+  "name": "@noahlocal/copilotkit-runtime-client-gql",
   "private": false,
-  "homepage": "https://github.com/bigppwong/CopilotKit",
+  "homepage": "https://github.com/gmz0015/CopilotKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bigppwong/CopilotKit.git"
+    "url": "https://github.com/gmz0015/CopilotKit.git"
   },
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.0-next.16",
+  "version": "2.0.0-next.17",
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -54,11 +54,11 @@
     "ts-node": "^10.9.2",
     "tsup": "^6.7.0",
     "typescript": "^5.4.5",
-    "@bigppwong/copilotkit-runtime": "workspace:*",
+    "@noahlocal/copilotkit-runtime": "workspace:*",
     "graphql": "^16.8.1"
   },
   "dependencies": {
-    "@bigppwong/copilotkit-shared": "workspace:*",
+    "@noahlocal/copilotkit-shared": "workspace:*",
     "@urql/core": "^5.0.3",
     "untruncate-json": "^0.0.1",
     "urql": "^4.1.0"

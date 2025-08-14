@@ -1,15 +1,15 @@
 {
-  "name": "@bigppwong/copilotkit-runtime",
+  "name": "@noahlocal/copilotkit-runtime",
   "private": false,
-  "homepage": "https://github.com/bigppwong/CopilotKit",
+  "homepage": "https://github.com/gmz0015/CopilotKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bigppwong/CopilotKit.git"
+    "url": "https://github.com/gmz0015/CopilotKit.git"
   },
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.0-next.16",
+  "version": "2.0.0-next.17",
   "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -52,7 +52,7 @@
     "@ag-ui/encoder": "0.0.28",
     "@ag-ui/proto": "0.0.28",
     "@anthropic-ai/sdk": "^0.27.3",
-    "@bigppwong/copilotkit-shared": "workspace:*",
+    "@noahlocal/copilotkit-shared": "workspace:*",
     "@graphql-yoga/plugin-defer-stream": "^3.3.1",
     "@langchain/community": "^0.3.29",
     "@langchain/core": "^0.3.38",

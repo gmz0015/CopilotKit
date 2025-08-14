@@ -13,7 +13,7 @@ import {
 } from "@ag-ui/client";
 
 import { AbstractAgent } from "@ag-ui/client";
-import { parseJson } from "@bigppwong/copilotkit-shared";
+import { parseJson } from "@noahlocal/copilotkit-shared";
 import { MetaEventInput } from "../../graphql/inputs/meta-event.input";
 
 export function constructAGUIRemoteAction({

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCopilotContext, useCopilotMessagesContext } from "@bigppwong/copilotkit-react-core";
+import { useCopilotContext, useCopilotMessagesContext } from "@noahlocal/copilotkit-react-core";
 import {
   getPublishedCopilotKitVersion,
   logActions,
@@ -17,7 +17,7 @@ import {
   ExclamationMarkTriangleIcon,
 } from "./icons";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { COPILOTKIT_VERSION } from "@bigppwong/copilotkit-shared";
+import { COPILOTKIT_VERSION } from "@noahlocal/copilotkit-shared";
 import { SmallSpinnerIcon } from "../chat/Icons";
 import { CopilotKitHelpModal } from "../help-modal";
 
@@ -154,10 +154,10 @@ function VersionInfo({
 
   const installCommand = [
     `npm install`,
-    `@bigppwong/copilotkit-react-core@${latestVersion}`,
-    `@bigppwong/copilotkit-react-ui@${latestVersion}`,
-    `@bigppwong/copilotkit-react-textarea@${latestVersion}`,
-    `&& npm install @bigppwong/copilotkit-runtime@${latestVersion}`,
+    `@noahlocal/copilotkit-react-core@${latestVersion}`,
+    `@noahlocal/copilotkit-react-ui@${latestVersion}`,
+    `@noahlocal/copilotkit-react-textarea@${latestVersion}`,
+    `&& npm install @noahlocal/copilotkit-runtime@${latestVersion}`,
   ].join(" ");
 
   const handleCopyClick = () => {

@@ -1,5 +1,18 @@
 # ui
 
+## 2.0.0-next.17
+
+### Major Changes
+
+- fix bug
+
+### Patch Changes
+
+- Updated dependencies
+  - @noahlocal/copilotkit-runtime-client-gql@2.0.0-next.17
+  - @noahlocal/copilotkit-react-core@2.0.0-next.17
+  - @noahlocal/copilotkit-shared@2.0.0-next.17
+
 ## 2.0.0-next.16
 
 ### Major Changes

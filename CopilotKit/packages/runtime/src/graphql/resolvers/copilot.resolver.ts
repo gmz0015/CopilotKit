@@ -51,7 +51,7 @@ import {
   TextMessage,
 } from "../types/converted";
 import telemetry from "../../lib/telemetry-client";
-import { randomId } from "@bigppwong/copilotkit-shared";
+import { randomId } from "@noahlocal/copilotkit-shared";
 import { AgentsResponse } from "../types/agents-response.type";
 import { LangGraphEventTypes } from "../../agents/langgraph/events";
 

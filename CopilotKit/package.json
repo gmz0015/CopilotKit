@@ -1,7 +1,7 @@
 {
-  "name": "bigppwong-copilotkit",
-  "version": "2.0.0-next.2",
-  "private": true,
+  "name": "@noahlocal/copilotkit",
+  "version": "2.1.0",
+  "private": false,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev --concurrency 14",
@@ -42,5 +42,35 @@
     "javascript",
     "automation",
     "textarea"
-  ]
+  ],
+  "main": ".eslintrc.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "eslint-config-next": "^15.0.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^1.13.4",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-module-utils": "^2.8.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-turbo": "^1.13.4",
+    "eslint-scope": "^7.2.2",
+    "eslint-visitor-keys": "^3.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmz0015/CopilotKit.git"
+  },
+  "author": "Noah Gao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmz0015/CopilotKit/issues"
+  },
+  "homepage": "https://github.com/gmz0015/CopilotKit#readme",
+  "description": ""
 }
