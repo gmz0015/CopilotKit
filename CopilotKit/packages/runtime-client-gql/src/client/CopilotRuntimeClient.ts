@@ -15,7 +15,7 @@ import {
   CopilotKitError,
   CopilotKitVersionMismatchError,
   getPossibleVersionMismatch,
-} from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
 
 const createFetchFn =
   (signal?: AbortSignal, handleGQLWarning?: (warning: string) => void) =>

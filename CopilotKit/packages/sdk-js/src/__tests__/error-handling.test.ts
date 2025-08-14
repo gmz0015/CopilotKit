@@ -1,4 +1,4 @@
-import { CopilotKitMisuseError } from "@copilotkit/shared";
+import { CopilotKitMisuseError } from "@noahlocal/copilotkit-shared";
 import {
   copilotKitInterrupt,
   convertActionToDynamicStructuredTool,

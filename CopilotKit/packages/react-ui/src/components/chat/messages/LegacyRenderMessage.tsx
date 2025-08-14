@@ -1,7 +1,7 @@
 import React from "react";
 import { RenderMessageProps } from "../props";
 import { RenderMessage as DefaultRenderMessage } from "./RenderMessage";
-import { aguiToGQL } from "@copilotkit/runtime-client-gql";
+import { aguiToGQL } from "@noahlocal/copilotkit-runtime-client-gql";
 
 /**
  * Legacy message render props interface for backwards compatibility

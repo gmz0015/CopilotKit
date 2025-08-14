@@ -1,5 +1,5 @@
 console.warn(
-  "Warning: '@copilotkit/sdk-js/langchain' is deprecated and will be removed in a future release. Please use '@copilotkit/sdk-js/langgraph' instead.",
+  "Warning: '@noahlocal/copilotkit-sdk-js/langchain' is deprecated and will be removed in a future release. Please use '@noahlocal/copilotkit-sdk-js/langgraph' instead.",
 );
 
 export {

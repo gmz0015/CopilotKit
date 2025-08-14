@@ -9,14 +9,14 @@ import { Input as DefaultInput } from "./Input";
 import { CopilotChat, CopilotChatProps } from "./Chat";
 import { AssistantMessage as DefaultAssistantMessage } from "./messages/AssistantMessage";
 import { UserMessage as DefaultUserMessage } from "./messages/UserMessage";
-import { useCopilotContext } from "@copilotkit/react-core";
+import { useCopilotContext } from "@noahlocal/copilotkit-react-core";
 import {
   CopilotKitError,
   CopilotKitErrorCode,
   Severity,
   ErrorVisibility,
   styledConsole,
-} from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
 
 export interface CopilotModalProps extends CopilotChatProps {
   /**

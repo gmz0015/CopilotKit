@@ -1,10 +1,10 @@
 {
-  "name": "@copilotkit/react-textarea",
+  "name": "@noahlocal/copilotkit-react-textarea",
   "private": false,
-  "homepage": "https://github.com/CopilotKit/CopilotKit",
+  "homepage": "https://github.com/gmz0015/CopilotKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CopilotKit/CopilotKit.git"
+    "url": "https://github.com/gmz0015/CopilotKit.git"
   },
   "publishConfig": {
     "access": "public"
@@ -59,9 +59,9 @@
     "typescript": "^5.2.3"
   },
   "dependencies": {
-    "@copilotkit/react-core": "workspace:*",
-    "@copilotkit/runtime-client-gql": "workspace:*",
-    "@copilotkit/shared": "workspace:*",
+    "@noahlocal/copilotkit-react-core": "workspace:*",
+    "@noahlocal/copilotkit-runtime-client-gql": "workspace:*",
+    "@noahlocal/copilotkit-shared": "workspace:*",
     "@emotion/css": "^11.11.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

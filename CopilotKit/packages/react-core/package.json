@@ -1,10 +1,10 @@
 {
-  "name": "@copilotkit/react-core",
+  "name": "@noahlocal/copilotkit-react-core",
   "private": false,
-  "homepage": "https://github.com/CopilotKit/CopilotKit",
+  "homepage": "https://github.com/gmz0015/CopilotKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CopilotKit/CopilotKit.git"
+    "url": "https://github.com/gmz0015/CopilotKit.git"
   },
   "publishConfig": {
     "access": "public"
@@ -53,8 +53,8 @@
     "typescript": "^5.2.3"
   },
   "dependencies": {
-    "@copilotkit/runtime-client-gql": "workspace:*",
-    "@copilotkit/shared": "workspace:*",
+    "@noahlocal/copilotkit-runtime-client-gql": "workspace:*",
+    "@noahlocal/copilotkit-shared": "workspace:*",
     "@scarf/scarf": "^1.3.0",
     "react-markdown": "^8.0.7",
     "untruncate-json": "^0.0.1"

@@ -7,17 +7,17 @@
  *
  * ## Install Dependencies
  *
- * This component is part of the [@copilotkit/react-ui](https://npmjs.com/package/@copilotkit/react-ui) package.
+ * This component is part of the [@noahlocal/copilotkit-react-ui](https://npmjs.com/package/@noahlocal/copilotkit-react-ui) package.
  *
- * ```shell npm2yarn \"@copilotkit/react-ui"\
- * npm install @copilotkit/react-core @copilotkit/react-ui
+ * ```shell npm2yarn \"@noahlocal/copilotkit-react-ui"\
+ * npm install @noahlocal/copilotkit-react-core @noahlocal/copilotkit-react-ui
  * ```
  *
  * ## Usage
  *
  * ```tsx
- * import { CopilotChat } from "@copilotkit/react-ui";
- * import "@copilotkit/react-ui/styles.css";
+ * import { CopilotChat } from "@noahlocal/copilotkit-react-ui";
+ * import "@noahlocal/copilotkit-react-ui/styles.css";
  *
  * <CopilotChat
  *   labels={{
@@ -49,7 +49,7 @@
  * By default, CopilotKit components do not have any styles. You can import CopilotKit's stylesheet at the root of your project:
  * ```tsx title="YourRootComponent.tsx"
  * ...
- * import "@copilotkit/react-ui/styles.css"; // [!code highlight]
+ * import "@noahlocal/copilotkit-react-ui/styles.css"; // [!code highlight]
  *
  * export function YourRootComponent() {
  *   return (
@@ -80,8 +80,8 @@ import {
   useCopilotChatInternal as useCopilotChat,
   useCopilotContext,
   useCopilotMessagesContext,
-} from "@copilotkit/react-core";
-import type { SuggestionItem } from "@copilotkit/react-core";
+} from "@noahlocal/copilotkit-react-core";
+import type { SuggestionItem } from "@noahlocal/copilotkit-react-core";
 import {
   CopilotKitError,
   CopilotKitErrorCode,
@@ -90,8 +90,8 @@ import {
   Severity,
   ErrorVisibility,
   styledConsole,
-} from "@copilotkit/shared";
-import { randomId } from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
+import { randomId } from "@noahlocal/copilotkit-shared";
 import {
   AssistantMessageProps,
   ComponentsMap,
@@ -104,7 +104,7 @@ import {
   UserMessageProps,
 } from "./props";
 
-import { HintFunction, runAgent, stopAgent } from "@copilotkit/react-core";
+import { HintFunction, runAgent, stopAgent } from "@noahlocal/copilotkit-react-core";
 import { ImageUploadQueue } from "./ImageUploadQueue";
 import { Suggestions as DefaultRenderSuggestionsList } from "./Suggestions";
 

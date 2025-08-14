@@ -1,4 +1,4 @@
-import { useCopilotChatInternal as useCopilotChat } from "@copilotkit/react-core";
+import { useCopilotChatInternal as useCopilotChat } from "@noahlocal/copilotkit-react-core";
 import { SmallSpinnerIcon } from "./Icons";
 
 interface SuggestionsProps {

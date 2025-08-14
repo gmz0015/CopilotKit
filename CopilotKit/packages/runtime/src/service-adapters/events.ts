@@ -6,7 +6,7 @@ import {
   ensureStructuredError,
   randomId,
   Severity,
-} from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
 import { plainToInstance } from "class-transformer";
 import {
   catchError,

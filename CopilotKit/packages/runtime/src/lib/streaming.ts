@@ -4,7 +4,7 @@ import {
   CopilotKitError,
   CopilotKitErrorCode,
   ensureStructuredError,
-} from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
 import { errorConfig, getFallbackMessage } from "./error-messages";
 
 export async function writeJsonLineResponseToEventStream<T>(

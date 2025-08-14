@@ -2,7 +2,7 @@ import {
   CopilotRuntimeClient,
   CopilotRuntimeClientOptions,
   GraphQLError,
-} from "@copilotkit/runtime-client-gql";
+} from "@noahlocal/copilotkit-runtime-client-gql";
 import { useToast } from "../components/toast/toast-provider";
 import { useMemo, useRef } from "react";
 import {
@@ -14,7 +14,7 @@ import {
   CopilotKitErrorCode,
   CopilotErrorHandler,
   CopilotErrorEvent,
-} from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
 import { shouldShowDevConsole } from "../utils/dev-console";
 
 export interface CopilotRuntimeClientHookOptions extends CopilotRuntimeClientOptions {

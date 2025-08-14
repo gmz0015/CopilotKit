@@ -1,5 +1,5 @@
 /// <reference types="jest" />
-import { CopilotErrorEvent, CopilotErrorHandler } from "@copilotkit/shared";
+import { CopilotErrorEvent, CopilotErrorHandler } from "@noahlocal/copilotkit-shared";
 
 describe("CopilotKit onError types", () => {
   let mockError: jest.Mock;

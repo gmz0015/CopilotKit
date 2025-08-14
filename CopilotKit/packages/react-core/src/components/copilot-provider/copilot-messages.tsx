@@ -17,7 +17,7 @@ import {
   loadMessagesFromJsonRepresentation,
   Message,
   GraphQLError,
-} from "@copilotkit/runtime-client-gql";
+} from "@noahlocal/copilotkit-runtime-client-gql";
 import { useCopilotContext } from "../../context/copilot-context";
 import { useToast } from "../toast/toast-provider";
 import { shouldShowDevConsole } from "../../utils/dev-console";
@@ -28,7 +28,7 @@ import {
   CopilotKitAgentDiscoveryError,
   CopilotKitError,
   CopilotKitErrorCode,
-} from "@copilotkit/shared";
+} from "@noahlocal/copilotkit-shared";
 import { SuggestionItem } from "../../utils/suggestions";
 
 // Helper to determine if error should show as banner based on visibility and legacy patterns
