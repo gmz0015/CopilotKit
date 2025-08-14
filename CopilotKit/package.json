@@ -1,4 +1,6 @@
 {
+  "name": "@noahlocal/copilotkit",
+  "version": "2.1.0",
   "private": false,
   "scripts": {
     "build": "turbo build",
@@ -41,5 +43,15 @@
     "automation",
     "textarea"
   ],
-  "name": "CopilotKit"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmz0015/CopilotKit.git"
+  },
+  "author": "Noah Gao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmz0015/CopilotKit/issues"
+  },
+  "homepage": "https://github.com/gmz0015/CopilotKit#readme",
+  "description": ""
 }
