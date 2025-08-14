@@ -415,17 +415,17 @@ export class CopilotRuntime<const T extends Parameter[] | [] = []> {
         description: action.description || "",
         schema: action.parameters
           ? {
-              parameters: {
-                properties: action.parameters.reduce(
-                  (acc, p) => ({
-                    ...acc,
-                    [p.name]: { type: p.type, description: p.description },
-                  }),
-                  {},
-                ),
-                required: action.parameters.filter((p) => p.required).map((p) => p.name),
-              },
-            }
+            parameters: {
+              properties: action.parameters.reduce(
+                (acc, p) => ({
+                  ...acc,
+                  [p.name]: { type: p.type, description: p.description },
+                }),
+                {},
+              ),
+              required: action.parameters.filter((p) => p.required).map((p) => p.name),
+            },
+          }
           : {},
         execute: async () => ({}), // Placeholder, not used for instructions
       };
@@ -615,7 +615,7 @@ please use an LLM adapter instead.`,
             url,
           });
         })
-        .catch((_error) => {});
+        .catch((_error) => { });
 
       // After getting the response, log it if logging is enabled
       if (this.observability?.enabled && publicApiKey) {
@@ -855,7 +855,7 @@ please use an LLM adapter instead.`,
           const data: InfoResponse = await response.json();
           const endpointAgents = (data?.agents ?? []).map((agent) => ({
             name: agent.name,
-            description: agent.description ?? "" ?? "",
+            description: agent.description ?? "",
             id: randomId(), // Required by Agent type
             endpoint,
           }));
@@ -1311,7 +1311,7 @@ please use an LLM adapter instead.`,
             properties: graphqlContext.properties,
           });
         })
-        .catch((_error) => {});
+        .catch((_error) => { });
 
       return {
         threadId,

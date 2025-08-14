@@ -378,29 +378,29 @@ export function useChat(options: UseChatOptions): UseChatHelpers {
             messages: convertMessagesToGqlInput(filterAgentStateMessages(messagesWithContext)),
             ...(copilotConfig.cloud
               ? {
-                  cloud: {
-                    ...(copilotConfig.cloud.guardrails?.input?.restrictToTopic?.enabled
-                      ? {
-                          guardrails: {
-                            inputValidationRules: {
-                              allowList:
-                                copilotConfig.cloud.guardrails.input.restrictToTopic.validTopics,
-                              denyList:
-                                copilotConfig.cloud.guardrails.input.restrictToTopic.invalidTopics,
-                            },
-                          },
-                        }
-                      : {}),
-                  },
-                }
+                cloud: {
+                  ...(copilotConfig.cloud.guardrails?.input?.restrictToTopic?.enabled
+                    ? {
+                      guardrails: {
+                        inputValidationRules: {
+                          allowList:
+                            copilotConfig.cloud.guardrails.input.restrictToTopic.validTopics,
+                          denyList:
+                            copilotConfig.cloud.guardrails.input.restrictToTopic.invalidTopics,
+                        },
+                      },
+                    }
+                    : {}),
+                },
+              }
               : {}),
             metadata: {
               requestType: CopilotRequestType.Chat,
             },
             ...(agentSessionRef.current
               ? {
-                  agentSession: agentSessionRef.current,
-                }
+                agentSession: agentSessionRef.current,
+              }
               : {}),
             agentStates: Object.values(coagentStatesRef.current!).map((state) => {
               const stateObject: AgentStateInput = {
@@ -787,6 +787,7 @@ export function useChat(options: UseChatOptions): UseChatHelpers {
                   // Call the single, externally defined executeActionFromMessage
                   await executeActionFromMessage(pairedFeAction, newExecutionMessage);
                 }
+              }
             }
             // @bigppwong伟文修改 ↓↓↓ # 解决了MCP result不返回的问题，解决了mcp params为空的问题
             // 修复 MCP 工具相关问题，添加错误处理日志，确保依赖项一致性。
@@ -1121,9 +1122,9 @@ async function executeAction({
     result: ResultMessage.encodeResult(
       error
         ? {
-            content: result,
-            error: JSON.parse(JSON.stringify(error, Object.getOwnPropertyNames(error))),
-          }
+          content: result,
+          error: JSON.parse(JSON.stringify(error, Object.getOwnPropertyNames(error))),
+        }
         : result,
     ),
     actionExecutionId: message.id,
