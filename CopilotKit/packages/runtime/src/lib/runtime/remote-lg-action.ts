@@ -268,23 +268,26 @@ async function streamEvents(controller: ReadableStreamDefaultController, args: E
       : null,
   };
 
-  const assistants = await client.assistants.search();
-  const retrievedAssistant = assistants.find(
-    (a) => a.name === name || a.assistant_id === initialAssistantId,
-  );
+  // @noahlocal铭泽修改 ↓↓↓ # 修复通过search获取限制前10个的问题，导致出现no agent id found的报错
+  // const assistants = await client.assistants.search();
+  const retrievedAssistant = await client.assistants.get(initialAssistantId);
+  // const retrievedAssistant = assistants.find(
+  //   (a) => a.name === name || a.assistant_id === initialAssistantId,
+  // );
   if (!retrievedAssistant) {
     telemetry.capture("oss.runtime.agent_execution_stream_errored", {
       ...streamInfo,
-      error: `Found no assistants for given information, while ${assistants.length} assistants exists`,
+      error: `Found no assistants for given information, while assistants exists`,
     });
     console.error(`
       No agent found for the agent name specified in CopilotKit provider
       Please check your available agents or provide an agent ID in the LangGraph Platform endpoint definition.\n
       
-      These are the available agents: [${assistants.map((a) => `${a.name} (ID: ${a.assistant_id})`).join(", ")}]
+      These are the available agents: [gmz edited]
       `);
     throw new Error("No agent id found");
   }
+  // @noahlocal铭泽修改 ↑↑↑
   const assistantId = retrievedAssistant.assistant_id;
 
   const graphInfo = await client.assistants.getGraph(assistantId);
