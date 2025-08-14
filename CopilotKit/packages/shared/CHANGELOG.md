@@ -1,5 +1,11 @@
 # @copilotkit/shared
 
+## 2.0.0-next.18
+
+### Major Changes
+
+- fix no dist error
+
 ## 2.0.0-next.17
 
 ### Major Changes
