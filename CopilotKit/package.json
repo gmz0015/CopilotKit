@@ -1,7 +1,10 @@
 {
   "name": "@noahlocal/copilotkit",
-  "version": "2.2.0",
+  "version": "2.1.0",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev --concurrency 14",
