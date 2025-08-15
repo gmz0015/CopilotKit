@@ -4,8 +4,14 @@
   "commit": false,
   "access": "public",
   "baseBranch": "origin/main",
-  "fixed": [["@copilotkit/*"]],
-  "ignore": ["*"],
+  "fixed": [
+    [
+      "@noahlocal/*"
+    ]
+  ],
+  "ignore": [
+    "*"
+  ],
   "linked": [],
   "updateInternalDependencies": "patch"
 }
