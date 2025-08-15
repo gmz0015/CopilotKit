@@ -1,5 +1,16 @@
 # @copilotkit/runtime
 
+## 2.1.0-next.1
+
+### Minor Changes
+
+- merge official code
+
+### Patch Changes
+
+- Updated dependencies
+  - @noahlocal/copilotkit-shared@2.1.0-next.1
+
 ## 1.10.2-next.0
 
 ### Patch Changes
@@ -35,7 +46,6 @@
 ### Patch Changes
 
 - 1abcecf: - fix: add graphqlContext to constructAGUIRemoteAction for enhanced agent properties
-
   - Updated constructAGUIRemoteAction to accept graphqlContext, allowing forwarding of properties like Authorization token to the agent.
   - Modified setupRemoteActions to include graphqlContext in the parameters.
 
@@ -137,7 +147,6 @@
 ### Patch Changes
 
 - 1abcecf: - fix: add graphqlContext to constructAGUIRemoteAction for enhanced agent properties
-
   - Updated constructAGUIRemoteAction to accept graphqlContext, allowing forwarding of properties like Authorization token to the agent.
   - Modified setupRemoteActions to include graphqlContext in the parameters.
   - @copilotkit/shared@1.10.0-next.1
@@ -205,7 +214,6 @@
   - remove request logging
 - 3a7f45f: - fix: resolve agui agents only after all other endpoints
 - fac89c2: - refactor: rename onTrace to onError throughout codebase
-
   - Rename CopilotTraceEvent to CopilotErrorEvent and CopilotTraceHandler to CopilotErrorHandler
 
 - 7ca7023: - feat: send node name to agui agent
@@ -306,7 +314,6 @@
 ### Patch Changes
 
 - fac89c2: - refactor: rename onTrace to onError throughout codebase
-
   - Rename CopilotTraceEvent to CopilotErrorEvent and CopilotTraceHandler to CopilotErrorHandler
 
 - Updated dependencies [fac89c2]
@@ -788,11 +795,9 @@
 - c0d3261: - full AWP support
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - refactor: address linter issues with the new pages
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - Merge branch 'mme/acp' into mme/mastra
   - add sse example
   - Create small-turkeys-agree.md
@@ -809,17 +814,14 @@
 - 77a7457: - feat: Add Model Context Protocol (MCP) support
 - 76d9ef9: - fix: handle langgraph client specific errors when running lgc stream
 - c0d3261: - add AWP support
-
   - make it work
   - update docs
   - refactor: move UI files to be normal NextJS pages and update generation
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - refactor: address linter issues with the new pages
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - Merge branch 'mme/acp' into mme/mastra
   - add sse example
 
@@ -833,11 +835,9 @@
 - c0d3261: - full AWP support
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - refactor: address linter issues with the new pages
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - Merge branch 'mme/acp' into mme/mastra
   - add sse example
   - Create small-turkeys-agree.md
@@ -852,17 +852,14 @@
   - fix missing tool call ids
 
 - c0d3261: - add AWP support
-
   - make it work
   - update docs
   - refactor: move UI files to be normal NextJS pages and update generation
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - refactor: address linter issues with the new pages
 
   Signed-off-by: Tyler Slaton <tyler@copilotkit.ai>
-
   - Merge branch 'mme/acp' into mme/mastra
   - add sse example
   - @copilotkit/shared@1.8.5-next.5
@@ -1867,7 +1864,6 @@
 - e16d95e: New prerelease
 - 1721cbd: Add convertActionsToDynamicStructuredTools to sdk-js
 - CopilotKit Core:
-
   - Improved error messages and overall logs
   - `useCopilotAction.renderAndAwait` renamed to `.renderAndAwaitForResponse` (backwards compatible, will be deprecated in the future)
   - Improved scrolling behavior. It is now possible to scroll up during LLM response generation
@@ -1875,7 +1871,6 @@
   - Updated interfaces for better developer ergonomics
 
   CoAgents:
-
   - Renamed `remoteActions` to `remoteEndpoints` (backwards compatible, will be deprecated in the future)
   - Support for LangGraph Platform in Remote Endpoints
   - LangGraph JS Support for CoAgents (locally via `langgraph dev`, `langgraph up` or deployed to LangGraph Platform)
@@ -1883,7 +1878,6 @@
   - Enhanced state management and message handling
 
   CopilotKid Back-end SDK:
-
   - Released a whole-new `@copilotkit/sdk-js` for building agents with LangGraph JS Support
 
 - 8d0144f: bump
@@ -2230,7 +2224,6 @@ CopilotKid Back-end SDK:
 ### Patch Changes
 
 - inject minified css in bundle
-
   - removes the need to import `styles.css` manually
   - empty `styles.css` included in the build for backwards compatibility
   - uses tsup's `injectStyles` with `postcss` to bundle and minify the CSS, then inject it as a style tag
@@ -2367,7 +2360,6 @@ CopilotKid Back-end SDK:
 ### Major Changes
 
 - b6a4b6eb: V1.0 Release Candidate
-
   - A robust new protocol between the frontend and the Copilot Runtime
   - Support for Copilot Cloud
   - Generative UI
@@ -2375,7 +2367,6 @@ CopilotKid Back-end SDK:
   - OpenAI assistant API streaming
 
 - V1.0 Release
-
   - A robust new protocol between the frontend and the Copilot Runtime
   - Support for Copilot Cloud
   - Generative UI
@@ -2413,7 +2404,6 @@ CopilotKid Back-end SDK:
 ### Major Changes
 
 - V1.0 Release Candidate
-
   - A robust new protocol between the frontend and the Copilot Runtime
   - Support for Copilot Cloud
   - Generative UI
