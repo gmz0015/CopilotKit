@@ -124,7 +124,7 @@ export async function execute(args: ExecutionArgs): Promise<ReadableStream<Uint8
             const delay = calculateDelay(attempt);
             console.warn(
               `LangGraph connection attempt ${attempt + 1}/${RETRY_CONFIG.maxRetries + 1} failed. ` +
-                `Retrying in ${delay}ms. Error: ${err?.message || String(err)}`,
+              `Retrying in ${delay}ms. Error: ${err?.message || String(err)}`,
             );
             await sleep(delay);
             continue; // Retry
@@ -316,12 +316,12 @@ async function streamEvents(controller: ReadableStreamDefaultController, args: E
     const isOnlyRecursionLimitDifferent =
       isRecursionLimitSetToDefault &&
       JSON.stringify({ ...newConfig, recursion_limit: null }) ===
-        JSON.stringify({ ...retrievedAssistant.config, recursion_limit: null });
+      JSON.stringify({ ...retrievedAssistant.config, recursion_limit: null });
 
     // If configs are different, we further check: Is the only diff a request to set the recursion limit to its already default?
     if (configsAreDifferent && !isOnlyRecursionLimitDifferent) {
       await client.assistants.update(assistantId, {
-        config: newConfig,
+        context: newConfig,
       });
     }
   }
